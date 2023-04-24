@@ -5,7 +5,7 @@ class Lyapunov_spectrum:
         """初期設定
 
         Args:
-            jacobian (func): ヤコビアン
+            jacobian (callable): ヤコビアンを求める関数
             N_x (int): 相空間の次元
         """
         

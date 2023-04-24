@@ -32,4 +32,8 @@ class Henon_Map:
             xy_list.append([x, y])
 
         data = np.array(xy_list)
-        np.save('./{}'.format(save_name), data)
+        np.save('./{}'.format(save_name), data)        
+    
+    def jacobian(self, x):
+        J = [[-2*x[0], self.b], [1, 0]]
+        return J
